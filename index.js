@@ -4,7 +4,7 @@ const findMatching = function (driverList, filterValue) {
 }
 
 const fuzzyMatch = function (driverList , query) {
-    let matchingRecords = driverList.filter(driver => driver.at(0) === query.at(0));
+    let matchingRecords = driverList.filter(driver => driver.charAt(0) === query.charAt(0));
     return matchingRecords;
 }
 
